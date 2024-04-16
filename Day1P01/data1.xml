@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="battery" class="com.example.Battery">
+        <property name="productId" value="1" />
+        <property name="productName" value="Rechargeable Battery" />
+        <property name="price" value="15.99" />
+        <property name="rechargeable" value="true" />
+    </bean>
+
+    <bean id="disc" class="com.example.Disc">
+        <property name="productId" value="2" />
+        <property name="productName" value="DVD Disc" />
+        <property name="price" value="5.99" />
+        <property name="capacity" value="700" />
+    </bean>
+
+</beans>
